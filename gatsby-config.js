@@ -6,7 +6,8 @@ module.exports = {
     {
       resolve: '@elegantstack/gatsby-theme-flexiblog-beauty',
       options: {
-        // Add theme options here
+        // Add theme options here. Check documentation for available options.
+        siteUrl: process.env.URL || process.env.VERCEL_URL
       }
     }
   ],
@@ -18,14 +19,22 @@ module.exports = {
     description:
       'The Ballston Spa Soccer Club (BSSC) is a non-profit organization designed to foster the growth and promotion of youth soccer in the greater Ballston Spa area. The BSSC has the privilege of providing our athletes with the opportunity to build a foundation of respect for, and dedication to, the sport of soccer.',
     address: 'Ballston Spa, NY',
-    // email: 'email@example.com',
-    // phone: '+1 (888) 888-8888',
+    email: 'email@example.com',
+    phone: '+1 (888) 888-8888',
 
     //Site Social Media Links
     social: [
       {
-        name: 'Facebook',
-        url: 'https://www.facebook.com/BallstonSpaSoccerClub/'
+        name: 'Github',
+        url: 'https://github.com/gatsbyjs'
+      },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/gatsbyjs'
+      },
+      {
+        name: 'Instagram',
+        url: 'https://github.com/gatsbyjs'
       }
     ],
 
@@ -36,28 +45,12 @@ module.exports = {
         slug: '/'
       },
       {
-        name: 'Tryouts & Player Evaluations',
-        slug: '/tryouts-and-player-evaluations'
+        name: 'Our Team',
+        slug: '/authors'
       },
       {
-        name: 'Programs',
-        slug: '/programs'
-      },
-      {
-        name: 'News',
-        slug: '/news'
-      },
-      {
-        name: 'Scholarships',
-        slug: '/scholarships'
-      },
-      {
-        name: 'Apparel & Uniforms',
-        slug: '/apparel-and-uniforms'
-      },
-      {
-        name: 'Where are they now?',
-        slug: '/where-are-they-now'
+        name: 'Contact',
+        slug: '/contact'
       }
     ],
 
